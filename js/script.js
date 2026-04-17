@@ -46,3 +46,31 @@ window.addEventListener("scroll", () => {
         navbar.style.background = "rgba(11,17,32,0.7)";
     }
 });
+
+// ================= ANO AUTOMÁTICO =================
+
+const ano = new Date().getFullYear();
+document.getElementById("ano").textContent = ano;
+
+// ================= MENU ATIVO =================
+
+const sections = document.querySelectorAll("section");
+const navItems = document.querySelectorAll(".nav-menu a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navItems.forEach(a => {
+        a.classList.remove("active");
+        if (a.getAttribute("href") === `#${current}`) {
+            a.classList.add("active");
+        }
+    });
+});

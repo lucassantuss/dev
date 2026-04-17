@@ -412,3 +412,8 @@ p {
         font-size: 1.4rem;
     }
 }
+
+.nav-menu a.active {
+    color: #fff;
+    font-weight: 600;
+}
