@@ -733,3 +733,15 @@ p {
         width: 100%;
     }
 }
+
+section[id] {
+    scroll-margin-top: 120px;
+}
+
+@media (max-width: 900px) {
+
+    section[id] {
+        scroll-margin-top: 100px;
+    }
+
+}
