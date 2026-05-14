@@ -28,12 +28,33 @@ toggle.addEventListener("click", () => {
     document.body.classList.toggle("menu-open");
 });
 
-// Fecha ao clicar no link
 navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-        navMenu.classList.remove("active");
-        toggle.classList.remove("open");
-        document.body.classList.remove("menu-open");
+    link.addEventListener("click", (e) => {
+        const href = link.getAttribute("href");
+
+        if (href.startsWith("#")) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+
+            if (target) {
+                const navbar = document.querySelector(".navbar");
+                const offset = navbar.offsetHeight + 30;
+
+                const targetPosition =
+                    target.getBoundingClientRect().top +
+                    window.pageYOffset -
+                    offset;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: "smooth"
+                });
+            }
+
+            navMenu.classList.remove("active");
+            toggle.classList.remove("open");
+            document.body.classList.remove("menu-open");
+        }
     });
 });
 
@@ -66,7 +87,7 @@ window.addEventListener("scroll", () => {
     let current = "";
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 120;
+        const sectionTop = section.offsetTop - 180;
         if (window.scrollY >= sectionTop) {
             current = section.getAttribute("id");
         }
