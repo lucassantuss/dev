@@ -24,6 +24,8 @@ const navLinks = document.querySelectorAll(".nav-menu a");
 toggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
     toggle.classList.toggle("open");
+
+    document.body.classList.toggle("menu-open");
 });
 
 // Fecha ao clicar no link
@@ -31,6 +33,7 @@ navLinks.forEach(link => {
     link.addEventListener("click", () => {
         navMenu.classList.remove("active");
         toggle.classList.remove("open");
+        document.body.classList.remove("menu-open");
     });
 });
 
@@ -41,9 +44,11 @@ const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
-        navbar.style.background = "rgba(10,10,10,0.95)";
+        navbar.style.background = "rgba(6, 7, 11, 0.92)";
+        navbar.style.borderBottom = "1px solid rgba(255,255,255,0.08)";
     } else {
-        navbar.style.background = "rgba(10,10,10,0.7)";
+        navbar.style.background = "rgba(6, 7, 11, 0.7)";
+        navbar.style.borderBottom = "1px solid rgba(255,255,255,0.06)";
     }
 });
 
@@ -61,8 +66,8 @@ window.addEventListener("scroll", () => {
     let current = "";
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 120;
-        if (scrollY >= sectionTop) {
+        const sectionTop = section.offsetTop - 160;
+        if (window.scrollY >= sectionTop) {
             current = section.getAttribute("id");
         }
     });
