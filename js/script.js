@@ -66,7 +66,7 @@ window.addEventListener("scroll", () => {
     let current = "";
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 160;
+        const sectionTop = section.offsetTop - 120;
         if (window.scrollY >= sectionTop) {
             current = section.getAttribute("id");
         }
