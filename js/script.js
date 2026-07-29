@@ -73,10 +73,12 @@ window.addEventListener("scroll", () => {
     }
 });
 
+
 // ================= ANO AUTOMÁTICO =================
 
 const ano = new Date().getFullYear();
 document.getElementById("ano").textContent = ano;
+
 
 // ================= MENU ATIVO =================
 
