@@ -45,11 +45,15 @@
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Lucassantuss - Criação de Sites",
-        "description": "Desenvolvimento de sites profissionais, landing pages e sistemas web.",
+        "description": "Desenvolvimento de sites profissionais, landing pages, sistemas web, domínio e e-mail profissional.",
         "url": "https://lucassantuss.com.br/",
         "areaServed": "BR",
-        "sameAs": [],
-        "serviceType": ["Criação de Sites", "Landing Pages", "Sistemas Web"]
+        "sameAs": [
+            "https://www.instagram.com/lucassantussdev",
+            "https://www.linkedin.com/in/lucassantuss/",
+            "https://github.com/lucassantuss"
+        ],
+        "serviceType": ["Criação de Sites", "Landing Pages", "Sistemas Web", "Registro de Domínio", "E-mail Profissional"]
         }
     </script>
 </head>
@@ -65,9 +69,9 @@
             </div>
 
             <nav class="nav-menu">
+                <a href="#sobre">Sobre mim</a>
                 <a href="#servicos">Serviços</a>
                 <a href="#processo">Como funciona</a>
-                <a href="#diferenciais">Diferenciais</a>
                 <a href="#projetos">Projetos</a>
                 <a href="#contato" class="nav-cta">Orçamento</a>
             </nav>
@@ -95,6 +99,7 @@
 
             <p>
                 Sites modernos, rápidos e estratégicos, criados para atrair clientes e aumentar suas vendas.
+                Do domínio ao e-mail profissional, cuido de tudo para sua empresa entrar online com credibilidade.
             </p>
 
             <div class="hero-buttons">
@@ -107,57 +112,141 @@
                 </a>
             </div>
 
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <strong>100%</strong>
+                    <span>Responsivo</span>
+                </div>
+                <div class="hero-stat">
+                    <strong>SEO</strong>
+                    <span>Otimizado desde o início</span>
+                </div>
+                <div class="hero-stat">
+                    <strong>Suporte</strong>
+                    <span>Direto comigo, sem intermediários</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- SECTIONS -->
-    <section class="section reveal">
-        <div class="container section-center">
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="section reveal">
+        <div class="container">
 
-            <h2>
-                Criação de sites profissionais, landing pages e sistemas web personalizados
-            </h2>
+            <div class="sobre-perfil">
 
-            <p>
-                Sou desenvolvedor web freelancer especializado na criação de sites profissionais,
-                landing pages e sistemas web personalizados. Desenvolvo soluções modernas,
-                rápidas e otimizadas para SEO, focadas em gerar resultados reais para empresas.
-            </p>
+                <div class="sobre-foto">
+                    <img src="assets/imgs/lucas.png" alt="Foto de Lucas Santos, desenvolvedor full stack">
+                </div>
 
-            <p>
-                Cada projeto é pensado para oferecer alta performance, excelente experiência
-                do usuário e maior conversão de visitantes em clientes.
-            </p>
+                <div class="sobre-texto">
+                    <h2>Sobre mim</h2>
+
+                    <p>
+                        Sou o Lucas, desenvolvedor full stack e criador do Lucassantuss. Trabalho como freelancer
+                        desenvolvendo sites, landing pages e sistemas web para pequenas e médias empresas que
+                        querem ter presença online sem complicação.
+                    </p>
+
+                    <p>
+                        Meu trabalho vai além de "entregar um site pronto": entendo o seu negócio, penso na
+                        experiência de quem vai comprar ou entrar em contato, e cuido de detalhes técnicos
+                        como performance, SEO e segurança para que o resultado realmente traga clientes.
+                    </p>
+
+                    <p>
+                        Atendo desde o primeiro contato até a entrega final, com comunicação direta pelo
+                        WhatsApp em cada etapa do projeto.
+                    </p>
+
+                    <div class="sobre-skills">
+                        <span>HTML / CSS / JavaScript</span>
+                        <span>UI/UX</span>
+                        <span>SEO Técnico</span>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     </section>
 
     <!-- SERVIÇOS -->
-    <section id="servicos" class="section reveal">
+    <section id="servicos" class="section alt reveal">
         <div class="container section-center">
 
             <h2>Serviços de desenvolvimento web</h2>
 
+            <p>
+                Soluções completas para colocar sua empresa online: do site ao domínio e e-mail profissional,
+                tudo em um só lugar.
+            </p>
+
             <div class="sobre-grid">
 
                 <div class="sobre-box">
+                    <div class="sobre-box-icon">🖥️</div>
+                    <h3>Sites Institucionais</h3>
+                    <p>Presença profissional para sua empresa, com design moderno e responsivo.</p>
+                    <ul class="sobre-box-list">
+                        <li>Design personalizado</li>
+                        <li>Adaptado para celular</li>
+                        <li>Formulário de contato</li>
+                    </ul>
+                </div>
+
+                <div class="sobre-box">
+                    <div class="sobre-box-icon">🎯</div>
                     <h3>Landing Pages</h3>
                     <p>Páginas focadas em conversão para captar clientes e aumentar vendas.</p>
+                    <ul class="sobre-box-list">
+                        <li>Foco em conversão</li>
+                        <li>Ideal para campanhas de anúncios</li>
+                    </ul>
                 </div>
 
                 <div class="sobre-box">
-                    <h3>Otimização e SEO</h3>
-                    <p>Seu site rápido, bem posicionado e preparado para crescer no Google.</p>
-                </div>
-
-                <div class="sobre-box">
+                    <div class="sobre-box-icon">⚙️</div>
                     <h3>Sistemas Web</h3>
                     <p>Soluções personalizadas para automatizar processos do seu negócio.</p>
+                    <ul class="sobre-box-list">
+                        <li>Painéis e dashboards</li>
+                        <li>Cardápios e catálogos digitais</li>
+                        <li>Integrações sob medida</li>
+                    </ul>
                 </div>
 
                 <div class="sobre-box">
-                    <h3>Sites Institucionais</h3>
-                    <p>Presença profissional para sua empresa com design moderno e responsivo.</p>
+                    <div class="sobre-box-icon">🔎</div>
+                    <h3>Otimização e SEO</h3>
+                    <p>Seu site rápido, bem posicionado e preparado para crescer no Google.</p>
+                    <ul class="sobre-box-list">
+                        <li>Alta performance</li>
+                        <li>SEO on-page</li>
+                        <li>Boas práticas de indexação</li>
+                    </ul>
+                </div>
+
+                <div class="sobre-box">
+                    <div class="sobre-box-icon">🌐</div>
+                    <h3>Registro de Domínio</h3>
+                    <p>Ajudo você a escolher e registrar o domínio ideal para o seu negócio.</p>
+                    <ul class="sobre-box-list">
+                        <li>Escolha do domínio (.com, .com.br)</li>
+                        <li>Registro e configuração completa</li>
+                        <li>Apontamento para o site</li>
+                    </ul>
+                </div>
+
+                <div class="sobre-box">
+                    <div class="sobre-box-icon">📧</div>
+                    <h3>E-mail Profissional</h3>
+                    <p>Passe mais credibilidade usando um e-mail com o nome da sua empresa.</p>
+                    <ul class="sobre-box-list">
+                        <li>Ex: contato@suaempresa.com.br</li>
+                        <li>Configuração em qualquer dispositivo</li>
+                    </ul>
                 </div>
 
             </div>
@@ -166,72 +255,40 @@
     </section>
 
     <!-- PROCESSO -->
-    <section id="processo" class="section alt reveal">
+    <section id="processo" class="section reveal">
         <div class="container section-center">
 
             <h2>Como funciona</h2>
+
+            <p>Um processo simples e transparente, do primeiro contato até o seu site no ar.</p>
 
             <div class="process-grid">
 
                 <div class="process-card">
                     <span>01</span>
                     <h3>Entendimento do projeto</h3>
+                    <p>Conversamos sobre seu negócio, objetivos e o que você precisa no site.</p>
                 </div>
 
                 <div class="process-card">
                     <span>02</span>
-                    <h3>Desenvolvimento</h3>
+                    <h3>Domínio e estrutura</h3>
+                    <p>Defino domínio, e-mail profissional (se necessário) e a estrutura do projeto.</p>
                 </div>
 
                 <div class="process-card">
                     <span>03</span>
+                    <h3>Desenvolvimento</h3>
+                    <p>Construo o site com foco em design, performance e SEO.</p>
+                </div>
+
+                <div class="process-card">
+                    <span>04</span>
                     <h3>Entrega e ajustes</h3>
+                    <p>Você revisa, eu ajusto, e o site será publicado.</p>
                 </div>
 
             </div>
-
-        </div>
-    </section>
-
-    <!-- DIFERENCIAIS -->
-    <section id="diferenciais" class="section reveal">
-        <div class="container section-center">
-
-            <h2>Diferenciais no desenvolvimento de sites</h2>
-
-            <div class="benefits-wrapper">
-
-                <div class="benefits-column">
-                    <div class="benefit-item">⚡ Sites rápidos (alta performance)</div>
-                    <div class="benefit-item">📱 100% responsivo</div>
-                    <div class="benefit-item">🔎 Otimizado para SEO</div>
-                </div>
-
-                <div class="benefits-column">
-                    <div class="benefit-item">🎯 Foco em conversão</div>
-                    <div class="benefit-item">💬 Suporte direto comigo</div>
-                    <div class="benefit-item">🚀 Entrega rápida</div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section class="section alt reveal">
-        <div class="container section-center">
-
-            <h2>O que eu desenvolvo</h2>
-
-            <p>
-                Criação de sites institucionais, landing pages, lojas virtuais e sistemas web
-                personalizados para empresas de diferentes segmentos.
-            </p>
-
-            <p>
-                Desenvolvimento focado em SEO, performance e conversão,
-                garantindo que seu site seja encontrado e gere resultados.
-            </p>
 
         </div>
     </section>
@@ -276,6 +333,20 @@
                         </div>
                     </div>
                 </article>
+
+                <article class="portfolio-card portfolio-card-empty">
+                    <div class="portfolio-empty-content">
+                        <div class="portfolio-empty-icon">+</div>
+                        <h3>Seu projeto pode ser o próximo</h3>
+                        <p>
+                            Estou com agenda aberta para novos projetos. Vamos conversar sobre o site
+                            da sua empresa?
+                        </p>
+                        <a href="https://wa.me/5511933401221?text=Olá,%20quero%20um%20site" class="portfolio-btn primary">
+                            Solicitar orçamento
+                        </a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -287,7 +358,8 @@
             <h2>Solicite seu site profissional agora</h2>
 
             <p>
-                Fale comigo agora e comece a atrair mais clientes com um site profissional.
+                Fale comigo agora e comece a atrair mais clientes com um site profissional,
+                domínio próprio e e-mail com a cara da sua empresa.
             </p>
 
             <a href="https://wa.me/5511933401221?text=Olá,%20quero%20um%20site" class="btn primary contato-btn">

@@ -269,6 +269,36 @@ p {
     flex-wrap: wrap;
 }
 
+.hero-stats {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+}
+
+.hero-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hero-stat strong {
+    font-size: 1.3rem;
+    font-weight: 800;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-stat span {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+}
+
 /* ================= BUTTONS ================= */
 
 .btn {
@@ -300,11 +330,74 @@ p {
     transform: translateY(-4px);
 }
 
+/* ================= SOBRE MIM ================= */
+
+.sobre-perfil {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.sobre-foto {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 28px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--card);
+    box-shadow: var(--shadow);
+}
+
+.sobre-foto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 28px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+    pointer-events: none;
+}
+
+.sobre-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.sobre-texto h2 {
+    text-align: left;
+}
+
+.sobre-texto p {
+    max-width: 100%;
+    margin-left: 0;
+    text-align: left;
+}
+
+.sobre-skills {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sobre-skills span {
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: rgba(124, 58, 237, 0.12);
+    border: 1px solid rgba(124, 58, 237, 0.25);
+    color: #c9afff;
+}
+
 /* ================= CARDS ================= */
 
 .sobre-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 28px;
     margin-top: 70px;
 }
@@ -325,6 +418,37 @@ p {
     text-align: left;
     position: relative;
     overflow: hidden;
+}
+
+.sobre-box-icon {
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+}
+
+.sobre-box-list {
+    list-style: none;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sobre-box-list li {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    padding-left: 20px;
+    position: relative;
+}
+
+.sobre-box-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary-light);
 }
 
 .sobre-box::before,
@@ -362,7 +486,7 @@ p {
 .process-grid {
     margin-top: 70px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
@@ -370,6 +494,13 @@ p {
     padding: 38px 32px;
     position: relative;
     overflow: hidden;
+    text-align: left;
+}
+
+.process-card p {
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.95rem;
 }
 
 .process-card span {
@@ -567,10 +698,36 @@ p {
         font-size: 1rem;
     }
 
+    .hero-stats {
+        gap: 30px;
+    }
+
+    .sobre-perfil {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .sobre-foto {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .sobre-texto h2,
+    .sobre-texto p {
+        text-align: center;
+    }
+
+    .sobre-skills {
+        justify-content: center;
+    }
+
     .sobre-grid,
-    .process-grid,
     .benefits-wrapper {
         grid-template-columns: 1fr;
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .menu-toggle {
@@ -637,6 +794,10 @@ p {
 
     .hero-buttons {
         flex-direction: column;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
     }
 
     .whatsapp-float {
@@ -834,6 +995,51 @@ p {
 
 .portfolio-btn:hover {
     transform: translateY(-3px);
+}
+
+.portfolio-card-empty {
+    align-items: center;
+    justify-content: center;
+    border-style: dashed;
+    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.portfolio-empty-content {
+    padding: 48px 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.portfolio-empty-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: rgba(124, 58, 237, 0.14);
+    border: 1px solid rgba(124, 58, 237, 0.3);
+    color: #c9afff;
+    margin-bottom: 18px;
+}
+
+.portfolio-empty-content h3 {
+    margin-bottom: 12px;
+}
+
+.portfolio-empty-content p {
+    margin-bottom: 26px;
+}
+
+.portfolio-empty-content .portfolio-btn {
+    flex: none;
+    padding: 14px 28px;
 }
 
 @media (max-width: 768px) {
