@@ -28,9 +28,11 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lucassantuss.com.br/">
 
-    <link rel="icon" href="/assets/icons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon.png">
-    <link rel="apple-touch-icon" href="/assets/icons/icon.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+    <link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+    <meta name="theme-color" content="#06070b">
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
@@ -65,7 +67,19 @@
         <div class="nav-container">
 
             <div class="logo">
-                <a href="#">Lucassantuss</a>
+                <a href="#" aria-label="Lucassantuss - início">
+                    <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="logo-grad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0" stop-color="#7c3aed" />
+                                <stop offset="1" stop-color="#2563eb" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="64" height="64" rx="15" fill="url(#logo-grad)" />
+                        <path fill="#fff" d="M13.690820312500001 44.3681640625H29.8939453125V39.5869140625H19.551171875V19.6318359375H13.690820312500001Z M41.261328125000006 44.7001953125C47.387304687500006 44.7001953125 51.039648437500006 41.89453125 51.039648437500006 37.1962890625C51.039648437500006 33.2451171875 48.267187500000006 30.8544921875 43.485937500000006 29.80859375L41.344335937500006 29.310546875C39.136328125000006 28.8125 37.691992187500006 28.08203125 37.691992187500006 26.5546875C37.691992187500006 25.1767578125 38.903906250000006 24.1640625 41.244726562500006 24.1640625C43.602148437500006 24.1640625 44.913671875000006 25.2099609375 45.079687500000006 27.0029296875H50.707617187500006C50.641210937500006 22.4208984375 46.988867187500006 19.2998046875 41.261328125000006 19.2998046875C35.650000000000006 19.2998046875 31.632421875000002 22.37109375 31.632421875000002 26.953125C31.632421875000002 30.671875 34.222265625000006 32.8134765625 38.488867187500006 33.79296875L41.111914062500006 34.4072265625C43.817968750000006 35.021484375 45.112890625000006 35.7685546875 45.112890625000006 37.1796875C45.112890625000006 38.7568359375 43.618750000000006 39.8359375 41.194921875000006 39.8359375C38.522070312500006 39.8359375 36.745703125000006 38.607421875 36.612890625000006 36.2001953125H30.984960937500002C31.084570312500002 41.9111328125 35.068945312500006 44.7001953125 41.261328125000006 44.7001953125Z" />
+                    </svg>
+                    <span class="logo-text">Lucassantuss</span>
+                </a>
             </div>
 
             <nav class="nav-menu">
