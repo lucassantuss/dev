@@ -155,11 +155,32 @@ p {
     align-items: center;
 }
 
+.logo {
+    position: relative;
+    z-index: 1100;
+}
+
 .logo a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     font-size: 1.15rem;
     font-weight: 800;
     color: #fff;
     letter-spacing: 0.5px;
+}
+
+.logo-mark {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(124, 58, 237, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.logo a:hover .logo-mark {
+    transform: rotate(-6deg) scale(1.06);
 }
 
 .nav-menu {
